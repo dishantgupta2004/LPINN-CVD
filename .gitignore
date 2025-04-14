@@ -1,0 +1,44 @@
+# Python virtual environment
+cvdenv/
+venv/
+env/
+.env/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Training data and large model files
+*.pt
+*.pth
+*.h5
+*.hdf5
+*.pkl
+*.model
+*.weights
+*.onnx
+*.pb
+
+# Logs
+logs/
+*.log
+
+# OS specific files
+.DS_Store
+.Thumbs.db
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo

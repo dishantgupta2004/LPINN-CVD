@@ -1,0 +1,81 @@
+# Core scientific libraries
+numpy>=1.22.0
+scipy>=1.8.0
+matplotlib>=3.5.0
+pandas>=1.4.0
+sympy>=1.10.0
+
+# Deep learning frameworks
+torch>=1.12.0
+tensorflow>=2.9.0
+tensorflow-probability>=0.17.0
+
+# Physics-informed machine learning
+deepxde>=1.0.0
+sciann>=0.7.0
+
+# Uncertainty quantification and Bayesian methods
+pymc>=4.0.0
+arviz>=0.12.0
+
+# Optimization tools
+optuna>=3.0.0
+ray[tune]>=2.0.0
+
+# Data processing and visualization
+h5py>=3.6.0
+xarray>=2022.3.0
+plotly>=5.6.0
+seaborn>=0.11.2
+pyvista>=0.34.0  # For 3D visualization
+
+# Statistical tools
+statsmodels>=0.13.2
+scikit-learn>=1.0.2
+
+# Numerical solvers for comparison
+fenics>=2019.1.0  # For finite element solutions
+fipy>=3.4.3  # For finite volume solutions
+
+# Domain decomposition utilities
+networkx>=2.8.0  # For graph-based domain partitioning
+
+# Code quality and testing
+pytest>=7.0.0
+black>=22.3.0
+flake8>=4.0.0
+mypy>=0.950
+
+# Large Language Model integration
+openai>=0.27.0  # For OpenAI API access
+transformers>=4.20.0  # For Hugging Face models
+langchain>=0.0.200  # For LLM workflow integration
+sentence-transformers>=2.2.0  # For embeddings
+
+# Jupyter environment
+jupyter>=1.0.0
+ipywidgets>=7.7.0
+jupyterlab>=3.4.0
+
+# Documentation
+sphinx>=5.0.0
+sphinx-rtd-theme>=1.0.0
+nbsphinx>=0.8.8
+
+# Environment and reproducibility
+python-dotenv>=0.20.0
+hydra-core>=1.2.0
+pyyaml>=6.0
+
+# Performance optimization
+numba>=0.55.0
+jax>=0.3.14
+jaxlib>=0.3.14
+
+# Parallel processing
+dask>=2022.5.0
+multiprocessing-logging>=0.3.1
+
+# Web interface (optional)
+streamlit>=1.10.0
+gradio>=3.0.0  # For demo interfaces

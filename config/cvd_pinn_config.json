@@ -1,0 +1,98 @@
+{
+  "domain": {
+    "x_min": 0.0,
+    "x_max": 0.1,
+    "y_min": 0.0,
+    "y_max": 0.05,
+    "z_min": 0.0,
+    "z_max": 0.0,
+    "t_min": 0.0,
+    "t_max": 10.0,
+    "dimension": 2
+  },
+  "physical": {
+    "D_SiH4": 1e-05,
+    "D_Si": 5e-06,
+    "D_H2": 4e-05,
+    "D_SiH2": 1.5e-05,
+    "thermal_conductivity": 0.1,
+    "specific_heat": 700.0,
+    "density": 1.0,
+    "A1": 1000000.0,
+    "E1": 150000.0,
+    "A2": 200000.0,
+    "E2": 120000.0,
+    "A3": 300000.0,
+    "E3": 100000.0,
+    "R": 8.314
+  },
+  "model": {
+    "hidden_layers": [
+      64,
+      64,
+      64,
+      64,
+      64,
+      64
+    ],
+    "activation": "tanh",
+    "output_size": 5,
+    "weight_initializer": "glorot_normal",
+    "output_activation": null,
+    "dropout_rate": 0.0,
+    "use_bias": true
+  },
+  "training": {
+    "batch_size": 1024,
+    "learning_rate": 0.001,
+    "n_epochs": 1000,
+    "validation_split": 0.1,
+    "optimizer": "adam",
+    "loss_weights": {
+      "pde": 1.0,
+      "bc": 10.0,
+      "ic": 10.0
+    },
+    "early_stopping": true,
+    "early_stopping_patience": 1000,
+    "checkpoint_dir": "checkpoints",
+    "checkpoint_frequency": 100,
+    "print_frequency": 100,
+    "plot_frequency": 1000,
+    "save_history": true,
+    "use_mixed_precision": false,
+    "use_tf_function": true,
+    "profile": false,
+    "max_grad_norm": null
+  },
+  "entropy_langevin": {
+    "ensemble_size": 5,
+    "alpha_initial": 0.1,
+    "beta_initial": 10.0,
+    "alpha_final": 0.01,
+    "beta_final": 100.0,
+    "alpha_schedule": "linear",
+    "beta_schedule": "linear",
+    "noise_type": "gaussian",
+    "noise_scale_factor": 1.0,
+    "consensus_update_frequency": 1
+  },
+  "sampling": {
+    "n_collocation_points": 5000,
+    "n_boundary_points": 1000,
+    "n_initial_points": 500,
+    "n_validation_points": 1000,
+    "use_adaptive_sampling": false,
+    "adaptive_sampling_frequency": 5,
+    "adaptive_residual_threshold": 0.01,
+    "adaptive_sample_ratio": 0.2,
+    "refinement_radius": 0.01,
+    "n_refinement_points": 1000,
+    "sampling_method": "mixed"
+  },
+  "random_seed": 1234,
+  "gpu_memory_limit": null,
+  "device": "cpu",
+  "log_level": "INFO",
+  "log_dir": "logs"
+}
