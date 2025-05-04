@@ -199,6 +199,5 @@ If you use CVD-PINN in your research, please cite:
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
-
-- This work was inspired by research on Physics-Informed Neural Networks by Raissi et al.
-- Special thanks to the TensorFlow team for their excellent deep learning framework
+- This work was inspired by the research paper "Langevin Dynamics for Training Physics-Informed Neural Networks" (OpenReview link). The methodology proposed in this paper introduced a novel stochastic sampling strategy that significantly influenced the design of our training framework.
+- The paper's approach to noise-driven sampling sparked the idea of exploring the Black-Box PINN problem through an analogy with biological neural systems (brain cells), encouraging deeper analysis of adaptive dynamics and non-deterministic training regimes in PINNs.
