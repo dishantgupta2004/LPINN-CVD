@@ -181,18 +181,7 @@ Reaction rates follow Arrhenius kinetics:
 Ri = Ai·e^(-Ei/RT)·∏j Cj^αij
 ```
 
-## Citation
 
-If you use CVD-PINN in your research, please cite:
-
-```
-@article{gupta2025langevin,
-  title={A Langevin Dynamics Approach to Physics-Informed Neural Networks: Application to Chemical Vapor Deposition Modeling},
-  author={Gupta, Dishant},
-  journal={arXiv preprint},
-  year={2025}
-}
-```
 
 ## License
 
